@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Fashionista — Shop</title>
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Playfair+Display:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+  <div class="container">
+    <header class="site-header" role="banner">
+      <div class="brand" aria-label="Fashionista brand">
+        <div class="logo">FASHIONISTA</div>
+        <div class="tagline" style="color:var(--muted);font-weight:600">Shop the latest</div>
+      </div>
+
+      <div class="search" role="search">
+        <input type="search" placeholder="Search for products, brands and more" aria-label="Search products">
+      </div>
+
+      <div class="actions">
+        <button class="btn">Cart</button>
+        <button class="btn login">Login</button>
+      </div>
+    </header>
+
+    <section class="hero" aria-label="Summer sale hero">
+      <div class="left" aria-hidden="false">
+        <h1>Summer Sale is Here!</h1>
+        <p>Up to 50% off on selected styles. Refresh your wardrobe with the latest trends.</p>
+        <a href="./shop.html" class="cta">Shop Now</a>
+      </div>
+     
+    </section>
+
+    <div class="flashbar">• Flash Sale: Extra 20% OFF! Ends in 02:15:42</div>
+
+    <main class="content" role="main">
+      <aside class="filters" aria-label="Filters">
+        <h3>Filters</h3>
+
+        <div class="filter-group">
+          <label>Category</label>
+          <div class="filter-options">
+            <ul>
+              <li><input type="checkbox" id="men"> <label for="men">Men</label></li>
+              <li><input type="checkbox" id="women"> <label for="women">Women</label></li>
+              <li><input type="checkbox" id="acc"> <label for="acc">Accessories</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Price</label>
+          <div class="filter-options">
+            <ul>
+              <li><input type="radio" name="price" id="p1"> <label for="p1">Under $50</label></li>
+              <li><input type="radio" name="price" id="p2"> <label for="p2">$50 - $100</label></li>
+              <li><input type="radio" name="price" id="p3"> <label for="p3">$100+</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Color</label>
+          <div class="filter-options">
+            <ul>
+              <li><input type="checkbox" id="c1"> <label for="c1">Black</label></li>
+              <li><input type="checkbox" id="c2"> <label for="c2">White</label></li>
+              <li><input type="checkbox" id="c3"> <label for="c3">Blue</label></li>
+            </ul>
+          </div>
+        </div>
+
+        <form style="margin-top:14px">
+          <label style="font-weight:700;font-size:14px">Subscribe</label>
+          <input type="email" placeholder="Email"
+            style="width:100%;padding:10px;border-radius:10px;border:1px solid #eee;margin-top:8px">
+          <button class="btn" style="width:100%;margin-top:8px">Subscribe</button>
+        </form>
+      </aside>
+
+      <section class="products" aria-label="Product listing">
+        <div class="categories" role="list">
+          <div class="cat" role="listitem">
+            <img
+              src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?q=80&w=400&auto=format&fit=crop&ixlib=rb-4.0.3&s=8cbd7e2c6f98b7a4b5f3a3c6b4bfc3c6"
+              alt="men">
+            <div>Men</div>
+          </div>
+          <div class="cat" role="listitem">
+            <img
+              src="https://images.pexels.com/photos/1036623/pexels-photo-1036623.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="women">
+            <div>Women</div>
+          </div>
+          <div class="cat" role="listitem">
+            <img
+              src="https://images.pexels.com/photos/1670770/pexels-photo-1670770.jpeg?auto=compress&cs=tinysrgb&w=400"
+              alt="accessories">
+            <div>Accessories</div>
+          </div>
+        </div>
+
+        <div class="product-grid" aria-live="polite">
+          <!-- Product 1 -->
+          <article class="card" aria-label="Classic Denim Jacket">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Denim Jacket">
+            </figure>
+            <div class="title">Classic Denim Jacket</div>
+            <div class="price-row">
+              <div class="price">$79.99</div>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 2 -->
+          <article class="card" aria-label="Men's White Sneakers">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="White Sneakers">
+            </figure>
+            <div class="title">Men's White Sneakers</div>
+            <div class="price-row">
+              <div class="price">$59.99</div>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 3 -->
+          <article class="card" aria-label="Women's Summer Dress">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/179909/pexels-photo-179909.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Summer Dress">
+            </figure>
+            <div class="title">Women's Summer Dress</div>
+            <div class="price-row">
+              <div class="price">$49.99</div>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </article>
+
+          <!-- Product 4 -->
+          <article class="card" aria-label="Leather Handbag">
+            <figure>
+              <img
+                src="https://images.pexels.com/photos/1670770/pexels-photo-1670770.jpeg?auto=compress&cs=tinysrgb&w=800"
+                alt="Leather Handbag">
+            </figure>
+            <div class="title">Leather Handbag</div>
+            <div class="price-row">
+              <div class="price">$120.00</div>
+              <a href="#" class="add-btn">Add to Cart</a>
+            </div>
+          </article>
+        </div>
+
+        <div style="margin-top:6px">
+          <h3 class="section-title">Best Sellers</h3>
+          <div class="best-sellers">
+            <article class="card">
+              <figure><img
+                  src="https://images.pexels.com/photos/428340/pexels-photo-428340.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt=""></figure>
+              <div class="title">Denim Jacket</div>
+              <div class="price">$79.99</div>
+              <a class="add-btn" href="#">Add to Cart</a>
+            </article>
+            <article class="card">
+              <figure><img
+                  src="https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt=""></figure>
+              <div class="title">White Sneakers</div>
+              <div class="price">$59.99</div>
+              <a class="add-btn" href="#">Add to Cart</a>
+            </article>
+            <article class="card">
+              <figure><img
+                  src="https://images.pexels.com/photos/179909/pexels-photo-179909.jpeg?auto=compress&cs=tinysrgb&w=800"
+                  alt=""></figure>
+              <div class="title">Summer Dress</div>
+              <div class="price">$49.99</div>
+              <a class="add-btn" href="#">Add to Cart</a>
+            </article>
+          </div>
+        </div>
+
+        <div class="testimonialsHead">
+
+          <h3 class="section-title" style="text-align:center; margin-top:40px;">What Our Customers Say</h3>
+
+          <div class="testimonials">
+
+            <div class="testimonial">
+              <img
+                src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=200"
+                alt="Emily">
+              <h4>Emily R.</h4>
+              <p>"Absolutely love the quality and fast shipping! My new favorite store."</p>
+            </div>
+
+            <div class="testimonial">
+              <img
+                src="https://images.pexels.com/photos/614810/pexels-photo-614810.jpeg?auto=compress&cs=tinysrgb&w=200"
+                alt="James">
+              <h4>James K.</h4>
+              <p>"Great selection and amazing deals. The flash sale was a steal!"</p>
+            </div>
+
+            <div class="testimonial">
+              <img
+                src="https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&w=200"
+                alt="Sophia">
+              <h4>Sophia L.</h4>
+              <p>"Customer service was super helpful. Will definitely shop again."</p>
+            </div>
+
+          </div>
+
+
+        </div>
+
+
+        <div class="newsletter" aria-label="Newsletter">
+          <div>
+            <h3 style="margin:0 0 6px">Stay in the Loop!</h3>
+            <div style="color:#e0e0e0">Sign up for exclusive offers, new arrivals, and more.</div>
+          </div>
+          <form onsubmit="return false" aria-label="Subscribe newsletter">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div>
+        <strong>Account</strong>
+        <nav>
+          <ul>
+            <li><a href="#">Login</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Order History</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <strong>Help</strong>
+        <nav>
+          <ul>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div>
+        <strong>Policies</strong>
+        <nav>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div style="min-width:160px;text-align:right">
+        <div style="font-size:14px;font-weight:700">Follow Us</div>
+        <div style="margin-top:8px">© 2024 Fashionista. All rights reserved.</div>
+      </div>
+    </footer>
+  </div>
+</body>
+
+</html>
